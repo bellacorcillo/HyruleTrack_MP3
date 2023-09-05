@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.jsx',
+  entry: './src/components/CreateAccount.jsx', // Adjusted entry point to CreateAccount.jsx in the components folder
   module: {
     rules: [
       {
@@ -18,7 +18,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx'],  // added this
+    extensions: ['.js', '.jsx'],
   },
   plugins: [
     new HtmlWebpackPlugin({

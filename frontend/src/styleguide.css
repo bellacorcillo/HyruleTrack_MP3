@@ -1,0 +1,19 @@
+:root {
+    --body-heavy-font-family: "Inter-SemiBold", Helvetica;
+    --body-heavy-font-size: 16px;
+    --body-heavy-font-style: normal;
+    --body-heavy-font-weight: 600;
+    --body-heavy-letter-spacing: -0.32px;
+    --body-heavy-line-height: 22px;
+    --body-small-heavy-font-family: "Inter-SemiBold", Helvetica;
+    --body-small-heavy-font-size: 14px;
+    --body-small-heavy-font-style: normal;
+    --body-small-heavy-font-weight: 600;
+    --body-small-heavy-letter-spacing: -0.28px;
+    --body-small-heavy-line-height: 19px;
+    --primary: rgba(84, 95, 113, 1);
+    --secondary: rgba(155, 165, 183, 1);
+    --tertiary: rgba(238, 241, 244, 1);
+    --white: rgba(255, 255, 255, 1);
+    --zelda-blue: rgba(67, 172, 178, 1);
+  }

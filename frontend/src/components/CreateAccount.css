@@ -1,0 +1,132 @@
+.main-default-page {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background-color: #ffedc0;
+    overflow: hidden;
+}
+
+.overlap-group {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    top: 0;
+    left: 0;
+}
+
+.rectangle {
+    position: absolute;
+    width: 1440px;
+    height: 311px;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+}
+
+.TOTK-logo {
+    background-image: url('/totk-logo.png');
+    position: absolute;
+    width: 170px;
+    height: 146px;
+    top: 24px;
+    left: 631px;
+    object-fit: cover;
+}
+
+.hyrule-track {
+    background-image: url('/hyrule-track.png');
+    position: absolute;
+    width: 789px;
+    height: 112px;
+    top: 175px;
+    left: 332px;
+}
+
+.zelda-background {
+    background-image: url('/zelda-background.png');
+    position: absolute;
+    width: 1440px;
+    height: 737px;
+    top: 287px;
+    left: 0;
+    object-fit: cover;
+}
+
+.account-form-wrapper {
+    position: absolute;
+    width: 792px;
+    height: 621px;
+    top: 356px;
+    left: 324px;
+    background-color: #60ba98;
+}
+
+.form-background {
+    position: absolute;
+    width: 717px;
+    height: 553px;
+    top: 395px;
+    left: 364px;
+    background-color: #ddeee9;
+}
+
+.header-text {
+    position: absolute;
+    width: 592px;
+    height: 39px;
+    top: 420px;
+    left: 424px;
+    font-family: "Creative Vintage Regular-SS", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 32px;
+    text-align: center;
+}
+
+.text-input {
+    position: absolute;
+    width: 581px;
+    height: 48px;
+    background-color: var(--white);
+    border-radius: 6px;
+    border: 1px solid var(--primary);
+}
+
+.button {
+    display: flex;
+    width: 146px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 822px;
+    left: 647px;
+    background-color: #dfbb56;
+    border-radius: 6px;
+}
+
+.button-label {
+    font-family: "Creative Vintage Regular-SS", Helvetica;
+    font-weight: 400;
+    color: var(--white);
+    font-size: 20px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.login-cta {
+    position: absolute;
+    width: 467px;
+    height: 39px;
+    top: 889px;
+    left: 488px;
+    font-family: "Creative Vintage Regular-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+}
+
+.login-link {
+    text-decoration: underline;
+}
