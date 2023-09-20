@@ -1,7 +1,6 @@
-// src/App.jsx
-
 import React from 'react';
 import CreateAccount from './components/CreateAccount';
+import Login from './components/Login';  // Add this line
 
 const App = () => {
   const isCreatingAccount = true; // You can manage this state based on user interactions
@@ -13,7 +12,9 @@ const App = () => {
     return <Login />;
   }
 
-  return <MainDefaultPage />;
+  // If none of the above conditions match, return the CreateAccount
+  return <CreateAccount />;
 }
 
 export default App;
+

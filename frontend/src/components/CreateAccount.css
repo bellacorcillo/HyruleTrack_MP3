@@ -1,132 +1,72 @@
-.main-default-page {
+body {
     position: relative;
-    width: 1440px;
+    width: 1920px;
     height: 1024px;
-    background-color: #ffedc0;
     overflow: hidden;
-}
-
-.overlap-group {
-    position: absolute;
-    width: 1440px;
-    height: 1024px;
-    top: 0;
-    left: 0;
+    background-image: url('../assets/zelda-background.png')
 }
 
 .rectangle {
-    position: absolute;
-    width: 1440px;
-    height: 311px;
-    top: 0;
-    left: 0;
+    position: fixed; /* Changed to position: fixed; */
+    top: 0; /* Ensures it's at the top of the viewport */
+    left: 0; /* Start from the leftmost point */
+    width: 1920px;
+    height: 300px;
     background-color: #000000;
-}
-
-.TOTK-logo {
-    background-image: url('/totk-logo.png');
-    position: absolute;
-    width: 170px;
-    height: 146px;
-    top: 24px;
-    left: 631px;
-    object-fit: cover;
+    z-index: 1; /* Setting stacking order to be below the hyrule-track logo */
 }
 
 .hyrule-track {
-    background-image: url('/hyrule-track.png');
     position: absolute;
-    width: 789px;
-    height: 112px;
-    top: 175px;
-    left: 332px;
+    top: 110px; /* Positioned beneath the TOTK logo */
+    left: 50%; /* Horizontal centering */
+    transform: translateX(-50%); /* Ensures perfect horizontal centering */
+    width: 789px; /* Specified width */
+    height: 112px; /* Specified height */
+    object-fit: cover;
+    display: block;
+    z-index: 2; /* Setting stacking order to be above the rectangle */
 }
 
+
 .zelda-background {
-    background-image: url('/zelda-background.png');
-    position: absolute;
-    width: 1440px;
-    height: 737px;
-    top: 287px;
-    left: 0;
+    width: 1920px;
+    height: 850px;
     object-fit: cover;
+    position: absolute;
 }
 
 .account-form-wrapper {
     position: absolute;
-    width: 792px;
-    height: 621px;
-    top: 356px;
-    left: 324px;
-    background-color: #60ba98;
+    width: 650px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fcfcfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.form-background {
-    position: absolute;
-    width: 717px;
-    height: 553px;
-    top: 395px;
-    left: 364px;
-    background-color: #ddeee9;
-}
-
-.header-text {
-    position: absolute;
-    width: 592px;
-    height: 39px;
-    top: 420px;
-    left: 424px;
-    font-family: "Creative Vintage Regular-SS", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 32px;
-    text-align: center;
-}
-
-.text-input {
-    position: absolute;
+.form-field {
     width: 581px;
     height: 48px;
     background-color: var(--white);
     border-radius: 6px;
-    border: 1px solid var(--primary);
+    border: 1px solid;
+    border-color: var(--primary);
 }
 
 .button {
     display: flex;
-    width: 146px;
-    height: 36px;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 822px;
-    left: 647px;
+    width: 146px;
+    height: 36px;
     background-color: #dfbb56;
     border-radius: 6px;
 }
 
-.button-label {
-    font-family: "Creative Vintage Regular-SS", Helvetica;
-    font-weight: 400;
-    color: var(--white);
-    font-size: 20px;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.login-cta {
-    position: absolute;
-    width: 467px;
-    height: 39px;
-    top: 889px;
-    left: 488px;
-    font-family: "Creative Vintage Regular-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 15px;
-    text-align: center;
-}
-
-.login-link {
-    text-decoration: underline;
-}
